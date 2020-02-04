@@ -34,7 +34,7 @@ public class ThemeParkTest {
         rollerCoaster = new RollerCoaster("Blue Ridge", 10);
         dodgems = new Dodgems("Bumper Cars", 5);
         themePark = new ThemePark(dodgems, park, playground, rollerCoaster, candyflossStall, iceCreamStall, tobaccoStall);
-        visitor = new Visitor(14, 1.2, 40.0);
+        visitor = new Visitor(14, 120, 40.0);
     }
 
     @Test
@@ -54,6 +54,11 @@ public class ThemeParkTest {
         themePark.generateAllReviews();
         assertEquals(7, themePark.getRating("Fun Zone"));
         assertEquals(4, themePark.getRating("Dream Cones"));
+    }
+
+    @Test
+    public void canGetListOfAllowedIReviewedPlaces(){
+        assertEquals(5, themePark.findAllAllowed(visitor).size());
     }
 
 }

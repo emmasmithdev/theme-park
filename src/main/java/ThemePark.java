@@ -1,10 +1,12 @@
 import attractions.*;
 import behaviours.IReviewed;
+import behaviours.ISecurity;
 import people.Visitor;
 import stalls.CandyflossStall;
 import stalls.IceCreamStall;
 import stalls.TobaccoStall;
 
+import java.time.chrono.IsoChronology;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -63,5 +65,23 @@ public class ThemePark {
             return this.allReviews.get(name);
         }
         return 0;
+    }
+
+    public ArrayList<IReviewed> findAllAllowed(Visitor visitor){
+        ArrayList<IReviewed> allowedPlaces = new ArrayList<>();
+        allowedPlaces.add(this.dodgems);
+        allowedPlaces.add(this.park);
+        allowedPlaces.add(this.candyflossStall);
+        allowedPlaces.add(this.iceCreamStall);
+        ArrayList<ISecurity> securityPlaces = new ArrayList<>();
+        securityPlaces.add(this.playground);
+        securityPlaces.add(this.rollerCoaster);
+        securityPlaces.add(this.tobaccoStall);
+        for (ISecurity place : securityPlaces){
+            if( place.isAllowedTo(visitor)){
+                allowedPlaces.add((IReviewed) place);
+            }
+        }
+        return allowedPlaces;
     }
 }

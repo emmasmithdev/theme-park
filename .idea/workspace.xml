@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="437fc8cd-6a40-4995-859a-eee9b75c9841" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ThemePark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ThemePark.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ThemeParkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ThemeParkTest.java" afterDir="false" />
     </list>
@@ -51,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ThemeParkTest.canCreateHashMapOfReviews">
+  <component name="RunManager" selected="JUnit.ThemeParkTest.canGetListOfAllowedIReviewedPlaces">
     <configuration name="ThemeParkTest.canCreateHashMapOfReviews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThemeParkStartPoint" />
       <option name="PACKAGE_NAME" value="" />
@@ -62,11 +61,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThemeParkTest.canGetListOfReviewedObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThemeParkTest.canGetListOfAllowedIReviewedPlaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThemeParkStartPoint" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ThemeParkTest" />
-      <option name="METHOD_NAME" value="canGetListOfReviewedObjects" />
+      <option name="METHOD_NAME" value="canGetListOfAllowedIReviewedPlaces" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThemeParkTest.canGetListOfAllowedIReviewedPlaces" />
         <item itemvalue="JUnit.ThemeParkTest.canCreateHashMapOfReviews" />
         <item itemvalue="JUnit.ThemeParkTest.canRecordAVisit" />
         <item itemvalue="JUnit.VisitorTest.canAddAttractionToList" />
         <item itemvalue="JUnit.VisitorTest.hasEmptyListOfAttractions" />
-        <item itemvalue="JUnit.ThemeParkTest.canGetListOfReviewedObjects" />
       </list>
     </recent_temporary>
   </component>
