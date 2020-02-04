@@ -48,4 +48,12 @@ public class ThemeParkTest {
         assertEquals(1, park.getVisitCount());
         assertEquals(1, visitor.getVisitedAttractions().size());
     }
+
+    @Test
+    public void canCreateHashMapOfReviews(){
+        themePark.generateAllReviews();
+        assertEquals(7, themePark.getRating("Fun Zone"));
+        assertEquals(4, themePark.getRating("Dream Cones"));
+    }
+
 }
