@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="437fc8cd-6a40-4995-859a-eee9b75c9841" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ThemeParkTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ThemePark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ThemePark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/attractions/Attraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/attractions/Attraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/attractions/Park.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/attractions/Park.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/people/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/Visitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/people/VisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/people/VisitorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,23 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ThemeParkTest.canGetListOfReviewedObjects">
-    <configuration name="DodgemTest.hasDefaultPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ThemeParkStartPoint" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="attractions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="attractions" />
-      <option name="MAIN_CLASS_NAME" value="attractions.DodgemTest" />
-      <option name="METHOD_NAME" value="hasDefaultPrice" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ThemeParkTest.canRecordAVisit">
     <configuration name="DodgemTest.tallPeoplePayDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThemeParkStartPoint" />
       <extension name="coverage">
@@ -84,38 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RollercoasterTest.hasDefaultPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ThemeParkStartPoint" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="attractions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="attractions" />
-      <option name="MAIN_CLASS_NAME" value="attractions.RollercoasterTest" />
-      <option name="METHOD_NAME" value="hasDefaultPrice" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RollercoasterTest.tallPeoplePayDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ThemeParkStartPoint" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="attractions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="attractions" />
-      <option name="MAIN_CLASS_NAME" value="attractions.RollercoasterTest" />
-      <option name="METHOD_NAME" value="tallPeoplePayDouble" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ThemeParkTest.canGetListOfReviewedObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThemeParkStartPoint" />
       <option name="PACKAGE_NAME" value="" />
@@ -126,13 +81,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThemeParkTest.canRecordAVisit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ThemeParkStartPoint" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThemeParkTest" />
+      <option name="METHOD_NAME" value="canRecordAVisit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VisitorTest.canAddAttractionToList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ThemeParkStartPoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="people.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="people" />
+      <option name="MAIN_CLASS_NAME" value="people.VisitorTest" />
+      <option name="METHOD_NAME" value="canAddAttractionToList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VisitorTest.hasEmptyListOfAttractions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ThemeParkStartPoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="people.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="people" />
+      <option name="MAIN_CLASS_NAME" value="people.VisitorTest" />
+      <option name="METHOD_NAME" value="hasEmptyListOfAttractions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThemeParkTest.canRecordAVisit" />
+        <item itemvalue="JUnit.VisitorTest.canAddAttractionToList" />
+        <item itemvalue="JUnit.VisitorTest.hasEmptyListOfAttractions" />
         <item itemvalue="JUnit.ThemeParkTest.canGetListOfReviewedObjects" />
         <item itemvalue="JUnit.DodgemTest.tallPeoplePayDouble" />
-        <item itemvalue="JUnit.DodgemTest.hasDefaultPrice" />
-        <item itemvalue="JUnit.RollercoasterTest.tallPeoplePayDouble" />
-        <item itemvalue="JUnit.RollercoasterTest.hasDefaultPrice" />
       </list>
     </recent_temporary>
   </component>

@@ -1,11 +1,8 @@
-import attractions.Dodgems;
-import attractions.Park;
-import attractions.Playground;
-import attractions.RollerCoaster;
+import attractions.*;
 import behaviours.IReviewed;
+import people.Visitor;
 import stalls.CandyflossStall;
 import stalls.IceCreamStall;
-import stalls.ParkingSpot;
 import stalls.TobaccoStall;
 
 import java.util.ArrayList;
@@ -41,5 +38,11 @@ public class ThemePark {
         places.add(this.tobaccoStall);
 
         return places;
+    }
+
+    public void visit(Visitor visitor, Attraction attraction){
+        int visitCount = attraction.getVisitCount();
+        visitor.addVisitedAttraction(attraction);
+        attraction.setVisitCount(visitCount +=1);
     }
 }
