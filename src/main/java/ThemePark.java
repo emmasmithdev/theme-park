@@ -20,6 +20,7 @@ public class ThemePark {
     private TobaccoStall tobaccoStall;
     private HashMap<String, Integer> allReviews;
 
+    // this.attractions and this.stalls
     public ThemePark(Dodgems dodgems, Park park, Playground playground, RollerCoaster rollerCoaster, CandyflossStall candyflossStall, IceCreamStall iceCreamStall, TobaccoStall tobaccoStall) {
         this.dodgems = dodgems;
         this.park = park;
@@ -30,7 +31,8 @@ public class ThemePark {
         this.tobaccoStall = tobaccoStall;
         this.allReviews = new HashMap<>();
     }
-
+    // Loop over stalls and attractions array lists to create new IReviewed array list. (Two loops).
+    // OR use addAll method - places.addAll(this.attractions) and places.addAll(this.stalls).
     public ArrayList<IReviewed> getAllReviewed(){
         ArrayList<IReviewed> places = new ArrayList<>();
         places.add(this.dodgems);
@@ -47,7 +49,7 @@ public class ThemePark {
     public void visit(Visitor visitor, Attraction attraction){
         int visitCount = attraction.getVisitCount();
         visitor.addVisitedAttraction(attraction);
-        attraction.setVisitCount(visitCount +=1);
+        attraction.setVisitCount(visitCount +=1); // This could be a method in the attraction class.
     }
 
     public void generateAllReviews(){
@@ -68,6 +70,8 @@ public class ThemePark {
 
     public ArrayList<IReviewed> findAllAllowed(Visitor visitor){
         ArrayList<IReviewed> allowedPlaces = new ArrayList<>();
+        // Loop over IReviewed array and check if instance of ISecurity and visitor is allowed to.
+        // Else just add the item from IReviewed array list.
         allowedPlaces.add(this.dodgems);
         allowedPlaces.add(this.park);
         allowedPlaces.add(this.candyflossStall);
