@@ -6,12 +6,11 @@ import stalls.CandyflossStall;
 import stalls.IceCreamStall;
 import stalls.TobaccoStall;
 
-import java.time.chrono.IsoChronology;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ThemePark {
-
+    //These should be an array list of attractions and array list of stalls.
     private Dodgems dodgems;
     private Park park;
     private Playground playground;

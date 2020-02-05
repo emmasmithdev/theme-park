@@ -5,7 +5,7 @@ import behaviours.ISecurity;
 import behaviours.ITicketed;
 import people.Visitor;
 
-public class RollerCoaster  extends Attraction implements ISecurity, IReviewed, ITicketed {
+public class RollerCoaster  extends Attraction implements ISecurity, ITicketed {
 
     public RollerCoaster(String name, int rating) {
 
@@ -13,6 +13,7 @@ public class RollerCoaster  extends Attraction implements ISecurity, IReviewed, 
     }
 
     public boolean isAllowedTo(Visitor visitor) {
+
         return (visitor.getHeight() > 145 ) && (visitor.getAge() > 12);
     }
 
